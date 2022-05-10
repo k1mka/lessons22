@@ -1,9 +1,11 @@
 ﻿using System;
+using System.Linq;
 
 namespace lessons22
 {
     internal class Program
     {
+
         static int[] GetArray()
         {
             int[] myArray = null;
@@ -15,9 +17,9 @@ namespace lessons22
         {
             int[] myArray = GetArray();
 
-            myArray ??= new int[0];
 
-            Console.WriteLine("Колличество эллементов в массиве:" + myArray.Length);
+
+            Console.WriteLine("Колличество эллементов в массиве:" + (myArray?.Sum() ?? 0));
         }
     }
 }
