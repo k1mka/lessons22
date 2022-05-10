@@ -8,7 +8,7 @@ namespace lessons22
 
         static int[] GetArray()
         {
-            int[] myArray = null;
+            int[] myArray = { 1, 2, 3 };
 
             return myArray;
         }
@@ -19,7 +19,7 @@ namespace lessons22
 
 
 
-            Console.WriteLine("Колличество эллементов в массиве:" + (myArray?.Sum() ?? 0));
+            Console.WriteLine("Колличество эллементов в массиве: " + (myArray?.Sum() ?? 0));
         }
     }
 }
