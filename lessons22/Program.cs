@@ -6,11 +6,11 @@ namespace lessons22
     {
         static void Main(string[] args)
         {
-            string str = null;
+            string str = "test 3";
 
-            string result = str ??= "default string";
+            str ??= "default string";
 
-            Console.WriteLine("колличество символов в строке: " + result);
+            Console.WriteLine("колличество символов в строке: " + str);
         }
     }
 }
