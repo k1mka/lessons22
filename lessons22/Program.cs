@@ -4,13 +4,20 @@ namespace lessons22
 {
     internal class Program
     {
+        static int[] GetArray()
+        {
+            int[] myArray = null;
+
+            return myArray;
+        }
+
         static void Main(string[] args)
         {
-            string str = "test 3";
+            int[] myArray = GetArray();
 
-            str ??= "default string";
+            myArray ??= new int[0];
 
-            Console.WriteLine("колличество символов в строке: " + str);
+            Console.WriteLine("Колличество эллементов в массиве:" + myArray.Length);
         }
     }
 }
