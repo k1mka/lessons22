@@ -6,9 +6,9 @@ namespace lessons22
     {
         static void Main(string[] args)
         {
-            string str = "test 2";
+            string str = null;
 
-            string result = str ?? string.Empty;
+            string result = str ??= "default string";
 
             Console.WriteLine("колличество символов в строке: " + result);
         }
