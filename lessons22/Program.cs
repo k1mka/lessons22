@@ -6,7 +6,7 @@ namespace lessons22
     {
         static void Main(string[] args)
         {
-            string str = null;
+            string str = "test";
 
             string result = str ?? string.Empty;
 
